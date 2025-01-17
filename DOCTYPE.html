@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>謎解きの答え</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        #answer {
+            display: none;
+            margin-top: 20px;
+            font-size: 1.5em;
+            color: red;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 1.2em;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>謎解き解けた？</h1>
+    <p>ボタンを押して答えを確認しよう</p>
+    <button onclick="showAnswer()">答えを見る</button>
+
+    <div id="answer">答え：稲稜祭（とうりょうさい）</div>
+
+    <script>
+        function showAnswer() {
+            document.getElementById("answer").style.display = "block";
+        }
+    </script>
+
+</body>
+</html>
